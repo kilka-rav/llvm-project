@@ -5,6 +5,8 @@ set(LLVM_TARGET_DEFINITIONS GLangRISCV.td)
 tablegen(LLVM GLangRISCVGenRegisterInfo.inc -gen-register-info)
 tablegen(LLVM GLangRISCVGenInstrInfo.inc -gen-instr-info)
 
+MESSAGE("START GLANG RISCV")
+
 add_public_tablegen_target(GLangRISCVCommonTableGen)
 
 add_llvm_target(GLangRISCVCodeGen
